@@ -1,6 +1,6 @@
 package com.example.Journal_OwlNote.repo;
 
-import com.example.Journal_OwlNote.Model.JournalResponse;
+import com.example.Journal_OwlNote.Model.Response;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,18 +19,18 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class JournalRepsonseRepositoryTest {
 
     @Autowired
-    private JournalRepsonseRepository journalRepository;
+    private RepsonseRepository Repository;
 
     @Test
     public void findByName_thenReturn() {
         String text = "alex";
 
         // given
-        JournalResponse journalResponse = new JournalResponse(text);
-        journalRepository.save(journalResponse);
+        Response journalResponse = new Response(text);
+        Repository.save(journalResponse);
 
         // when
-        JournalResponse dbJournalResponse = journalRepository.findById(journalResponse.getId()).get();
+        Response dbJournalResponse = Repository.findById(journalResponse.getId()).get();
 
         // then
         assertThat(dbJournalResponse.getResponse()).isEqualTo(text);

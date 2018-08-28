@@ -1,6 +1,6 @@
 package com.example.Journal_OwlNote.Controller;
-import com.example.Journal_OwlNote.Model.JournalResponse;
-import com.example.Journal_OwlNote.repo.JournalRepsonseRepository;
+import com.example.Journal_OwlNote.Model.Response;
+import com.example.Journal_OwlNote.repo.RepsonseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,24 +10,24 @@ import java.util.List;
 @RestController
 @RequestMapping("journalResponse")
 @CrossOrigin(origins = {"http://localhost:8100"})
-public class JournalResponseController {
+public class ResponseController {
 
 
-    private JournalRepsonseRepository journalRepo;
+    private RepsonseRepository journalRepo;
 
     @Autowired
-    public JournalResponseController(JournalRepsonseRepository journalRepo){
+    public ResponseController(RepsonseRepository journalRepo){
         this.journalRepo = journalRepo;
     }
 
     @GetMapping("/response")
-    public List<JournalResponse> journalresponse(){ return journalRepo.findAll();}
+    public List<Response> journalresponse(){ return journalRepo.findAll();}
 
     @GetMapping("/responses/{id}")
-    public List<JournalResponse> getbyId(@PathVariable long id){ return journalRepo.findAll();}
+    public List<Response> getbyId(@PathVariable long id){ return journalRepo.findAll();}
 
     @PostMapping("/responses")
-    public JournalResponse post(@RequestBody JournalResponse response) { return journalRepo.save(response); }
+    public Response post(@RequestBody Response response) { return journalRepo.save(response); }
 
    // public List<JournalResponse> postJournalResponse(){ return journalRepo.findAll();}
 

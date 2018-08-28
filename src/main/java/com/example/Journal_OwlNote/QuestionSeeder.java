@@ -15,6 +15,7 @@ public class QuestionSeeder implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         repository.save(new Question("Where were you five years ago?"));
+        repository.save(new Question("Where were you five years ago?"));
         repository.save(new Question("Write a letter to your older self."));
         repository.save(new Question("Write a letter to your future children and grandchildren that you can give to them when they are older?"));
         repository.save(new Question("Write a letter to your boss or coworkers."));

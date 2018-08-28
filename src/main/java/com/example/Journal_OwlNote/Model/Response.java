@@ -3,15 +3,15 @@ package com.example.Journal_OwlNote.Model;
 import javax.persistence.*;
 
 @Entity
-public class JournalResponse {
+public class Response {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String response;
 
-    public JournalResponse(){}
+    public Response(){}
 
-    public JournalResponse(String response) {
+    public Response(String response) {
         this.response = response;
     }
 
