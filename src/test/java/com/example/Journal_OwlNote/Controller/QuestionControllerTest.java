@@ -2,29 +2,22 @@ package com.example.Journal_OwlNote.Controller;
 
 import com.example.Journal_OwlNote.Model.JournalResponse;
 import com.example.Journal_OwlNote.Model.Question;
-import com.example.Journal_OwlNote.repo.QuestionRepository;
-import org.junit.After;
-import org.junit.Before;
+import com.example.Journal_OwlNote.Repository.QuestionRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.data.ldap.DataLdapTest;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultMatcher;
-import static org.mockito.BDDMockito.given;
+
 import java.util.Arrays;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.internal.bytebuddy.matcher.ElementMatchers.is;
-import static org.junit.Assert.*;
-import static org.hamcrest.Matchers.*;
 //import static org.hamcrest.Ma
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.jsonPath;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

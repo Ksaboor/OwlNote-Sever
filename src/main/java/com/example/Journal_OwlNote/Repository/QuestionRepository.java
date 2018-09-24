@@ -1,4 +1,4 @@
-package com.example.Journal_OwlNote.repo;
+package com.example.Journal_OwlNote.Repository;
 
 import com.example.Journal_OwlNote.Model.Question;
 import org.springframework.data.jpa.repository.JpaRepository;

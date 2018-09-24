@@ -1,6 +1,6 @@
 package com.example.Journal_OwlNote.Controller;
 import com.example.Journal_OwlNote.Model.Response;
-import com.example.Journal_OwlNote.repo.RepsonseRepository;
+import com.example.Journal_OwlNote.Repository.RepsonseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

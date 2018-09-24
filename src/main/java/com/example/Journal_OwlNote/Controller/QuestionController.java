@@ -2,7 +2,7 @@ package com.example.Journal_OwlNote.Controller;
 
 
 import com.example.Journal_OwlNote.Model.Question;
-import com.example.Journal_OwlNote.repo.QuestionRepository;
+import com.example.Journal_OwlNote.Repository.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

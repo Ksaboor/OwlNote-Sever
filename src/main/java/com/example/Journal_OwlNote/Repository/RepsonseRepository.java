@@ -1,4 +1,4 @@
-package com.example.Journal_OwlNote.repo;
+package com.example.Journal_OwlNote.Repository;
 
 //import com.example.Journal_OwlNote.Model.JournalResponse;
 import com.example.Journal_OwlNote.Model.Response;
